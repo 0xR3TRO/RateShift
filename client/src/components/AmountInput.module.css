@@ -1,0 +1,59 @@
+/* AmountInput.module.css — Numeric input with currency symbol prefix */
+
+.wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.inputContainer {
+    position: relative;
+}
+
+.symbol {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    pointer-events: none;
+    user-select: none;
+}
+
+.input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    font-size: 1.25rem;
+    color: var(--color-text);
+    background: var(--color-surface);
+    outline: none;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.input::placeholder {
+    color: var(--color-text-muted);
+}
+
+.input:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.hasError .input {
+    border-color: var(--color-error);
+}
+
+.hasError .input:focus {
+    border-color: var(--color-error);
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.error {
+    margin-top: 0.25rem;
+    font-size: 0.8rem;
+    color: var(--color-error);
+}

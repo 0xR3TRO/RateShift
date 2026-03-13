@@ -1,0 +1,117 @@
+/* ConverterPage.module.css */
+
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+/* ---- Header ---- */
+
+.header {
+    text-align: center;
+    margin-bottom: var(--space-sm);
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-heading);
+    margin-bottom: var(--space-xs);
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+/* ---- Converter card ---- */
+
+.converterCard {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--card-shadow);
+    padding: var(--space-lg);
+    transition:
+        background-color var(--transition-theme),
+        border-color var(--transition-theme);
+}
+
+/* ---- Currency selector row ---- */
+
+.selectorRow {
+    display: flex;
+    align-items: flex-end;
+    gap: var(--space-md);
+}
+
+.selectorCol {
+    flex: 1;
+    min-width: 0;
+}
+
+.swapBtn {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    color: var(--color-primary);
+    background: var(--color-surface);
+    transition:
+        background-color var(--transition-fast),
+        border-color var(--transition-fast),
+        transform var(--transition-fast);
+    margin-bottom: 2px;
+}
+
+.swapBtn:hover {
+    background: var(--color-primary-bg);
+    border-color: var(--color-primary);
+    transform: rotate(180deg);
+}
+
+/* ---- Amount row ---- */
+
+.amountRow {
+    margin-top: var(--space-md);
+}
+
+/* ---- Trend + History sections ---- */
+
+.trendSection {
+    /* spacing handled by gap on .page */
+}
+
+.historySection {
+    /* spacing handled by gap on .page */
+}
+
+/* ---- Responsive: stack on mobile ---- */
+
+@media (max-width: 640px) {
+    .selectorRow {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--space-sm);
+    }
+
+    .swapBtn {
+        align-self: center;
+        transform: rotate(90deg);
+    }
+
+    .swapBtn:hover {
+        transform: rotate(270deg);
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+}

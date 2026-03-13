@@ -1,0 +1,64 @@
+/* ResultCard.module.css — Conversion result card styling */
+
+.card {
+    background: var(--color-surface);
+    border-radius: 12px;
+    padding: var(--space-xl);
+    box-shadow: var(--shadow-md);
+    transition:
+        background-color var(--transition-theme),
+        box-shadow var(--transition-theme);
+}
+
+/* ---- Converted amount ---- */
+
+.convertedAmount {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+    line-height: 1.2;
+}
+
+/* ---- Rate info line ---- */
+
+.rateLine {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+}
+
+/* ---- Timestamp ---- */
+
+.timestamp {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin-top: var(--space-xs);
+}
+
+/* ---- Trend badge ---- */
+
+.trend {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: var(--space-sm);
+}
+
+.trendUp {
+    background: #ecfdf5;
+    color: #059669;
+}
+
+.trendDown {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.trendNeutral {
+    background: #f1f5f9;
+    color: #64748b;
+}

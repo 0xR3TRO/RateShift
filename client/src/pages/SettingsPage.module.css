@@ -1,0 +1,145 @@
+/* SettingsPage.module.css */
+
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ---- Header ---- */
+
+.header {
+    text-align: center;
+    margin-bottom: var(--space-sm);
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-heading);
+    margin-bottom: var(--space-xs);
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+/* ---- Card form ---- */
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--card-shadow);
+    padding: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    transition:
+        background-color var(--transition-theme),
+        border-color var(--transition-theme);
+}
+
+/* ---- Field ---- */
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+}
+
+.hint {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin: 0;
+    margin-top: var(--space-xs);
+}
+
+/* ---- Theme toggle button ---- */
+
+.themeBtn {
+    align-self: flex-start;
+    padding: 0.55rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    color: var(--color-text);
+    cursor: pointer;
+    transition:
+        background-color var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+.themeBtn:hover {
+    background: var(--color-surface-hover);
+    border-color: var(--color-primary);
+}
+
+/* ---- Select ---- */
+
+.select {
+    padding: 0.55rem 0.85rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    color: var(--color-text);
+    font-size: 0.95rem;
+    cursor: pointer;
+    max-width: 120px;
+    transition: border-color var(--transition-fast);
+}
+
+.select:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* ---- Save button ---- */
+
+.saveBtn {
+    align-self: flex-start;
+    padding: 0.65rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: var(--color-primary);
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition:
+        background-color var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+.saveBtn:hover {
+    background: var(--color-primary-dark);
+    transform: translateY(-1px);
+}
+
+.saveBtn:active {
+    transform: translateY(0);
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 480px) {
+    .page {
+        max-width: 100%;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+}

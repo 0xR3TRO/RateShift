@@ -1,0 +1,34 @@
+{
+    "name": "rateshift-server",
+    "version": "1.0.0",
+    "description": "RateShift currency converter API server",
+    "main": "src/server.js",
+    "scripts": {
+        "start": "node src/server.js",
+        "dev": "nodemon src/server.js",
+        "test": "jest --forceExit --detectOpenHandles",
+        "test:watch": "jest --watch --forceExit --detectOpenHandles",
+        "lint": "echo \"No linter configured yet\""
+    },
+    "keywords": [
+        "currency",
+        "exchange-rates",
+        "api",
+        "express"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^1.6.7",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.1",
+        "express": "^4.18.2",
+        "express-rate-limit": "^7.1.5",
+        "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0",
+        "nodemon": "^3.0.3",
+        "supertest": "^6.3.4"
+    }
+}

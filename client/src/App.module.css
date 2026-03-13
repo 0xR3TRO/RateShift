@@ -1,0 +1,23 @@
+/* App.module.css — Root layout styles */
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex: 1;
+    width: 100%;
+    max-width: var(--max-width-lg);
+    margin: 0 auto;
+    padding: calc(var(--space-2xl) + 60px) var(--space-md) var(--space-2xl);
+    /* top padding accounts for the fixed navbar height (~60px) */
+}
+
+@media (min-width: 768px) {
+    .main {
+        padding-left: var(--space-lg);
+        padding-right: var(--space-lg);
+    }
+}

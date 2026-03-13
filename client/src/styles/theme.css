@@ -1,0 +1,111 @@
+/* ==========================================================================
+   theme.css — Light and dark theme variable definitions
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Light theme (default)
+   -------------------------------------------------------------------------- */
+
+:root {
+    /* Primary */
+    --color-primary: #2563eb;
+    --color-primary-light: #3b82f6;
+    --color-primary-dark: #1d4ed8;
+    --color-primary-bg: #eff6ff;
+
+    /* Semantic */
+    --color-success: #10b981;
+    --color-success-bg: #ecfdf5;
+    --color-error: #ef4444;
+    --color-error-bg: #fef2f2;
+    --color-warning: #f59e0b;
+    --color-warning-bg: #fffbeb;
+
+    /* Surfaces */
+    --color-bg: #f8fafc;
+    --color-surface: #ffffff;
+    --color-surface-elevated: #ffffff;
+    --color-surface-hover: #f1f5f9;
+
+    /* Text */
+    --color-text: #1e293b;
+    --color-heading: #0f172a;
+    --color-text-secondary: #475569;
+    --color-text-muted: #94a3b8;
+
+    /* Borders & Dividers */
+    --color-border: #e2e8f0;
+    --color-border-strong: #cbd5e1;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md:
+        0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    --shadow-lg:
+        0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+    --shadow-xl:
+        0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+
+    /* Card */
+    --card-bg: var(--color-surface);
+    --card-border: var(--color-border);
+    --card-shadow: var(--shadow-md);
+
+    /* Navbar */
+    --navbar-bg: rgba(255, 255, 255, 0.8);
+    --navbar-border: var(--color-border);
+}
+
+/* --------------------------------------------------------------------------
+   Dark theme
+   -------------------------------------------------------------------------- */
+
+[data-theme="dark"] {
+    /* Primary — slightly brighter for dark backgrounds */
+    --color-primary: #3b82f6;
+    --color-primary-light: #60a5fa;
+    --color-primary-dark: #2563eb;
+    --color-primary-bg: #1e3a5f;
+
+    /* Semantic */
+    --color-success: #34d399;
+    --color-success-bg: #064e3b;
+    --color-error: #f87171;
+    --color-error-bg: #7f1d1d;
+    --color-warning: #fbbf24;
+    --color-warning-bg: #78350f;
+
+    /* Surfaces */
+    --color-bg: #0f172a;
+    --color-surface: #1e293b;
+    --color-surface-elevated: #334155;
+    --color-surface-hover: #334155;
+
+    /* Text */
+    --color-text: #e2e8f0;
+    --color-heading: #f1f5f9;
+    --color-text-secondary: #94a3b8;
+    --color-text-muted: #64748b;
+
+    /* Borders & Dividers */
+    --color-border: #334155;
+    --color-border-strong: #475569;
+
+    /* Shadows — subtler on dark backgrounds */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-md:
+        0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+    --shadow-lg:
+        0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+    --shadow-xl:
+        0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+
+    /* Card */
+    --card-bg: var(--color-surface);
+    --card-border: var(--color-border);
+    --card-shadow: var(--shadow-md);
+
+    /* Navbar */
+    --navbar-bg: rgba(15, 23, 42, 0.85);
+    --navbar-border: var(--color-border);
+}

@@ -1,0 +1,32 @@
+{
+    "name": "rateshift",
+    "version": "1.0.0",
+    "description": "RateShift — Advanced real-time currency converter with React frontend and Node.js backend",
+    "private": true,
+    "scripts": {
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "client": "npm --prefix client start",
+        "server": "npm --prefix server run dev",
+        "build": "npm --prefix client run build",
+        "start": "npm --prefix server start",
+        "test": "npm --prefix server test",
+        "test:client": "npm --prefix client test",
+        "test:all": "concurrently \"npm run test\" \"npm run test:client\"",
+        "install:all": "npm install && npm --prefix client install && npm --prefix server install",
+        "lint": "npm --prefix client run lint && npm --prefix server run lint"
+    },
+    "keywords": [
+        "currency",
+        "converter",
+        "exchange-rates",
+        "react",
+        "express",
+        "monorepo",
+        "real-time"
+    ],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
